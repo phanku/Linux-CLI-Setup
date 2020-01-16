@@ -11,6 +11,8 @@ alias lsd='ls -d */'                      # Lists only directories.
 alias less='less -FXc'                    # Preferred less implementation.
 alias c='clear'                           # Shortcut for clear.
 
+alias cd="cd $@"
+
 #   extract:  Extract most know archives with one command
 #   ---------------------------------------------------------
 extract () {
