@@ -118,3 +118,6 @@ fi
 if [ -f ~/.zshenv ]; then
      . ~/.zshenv
 fi
+
+# Showing last login.
+lastlog -u $USER | perl -lane 'END{print "Last login: @F[3..6] $F[8] from $F[2]"}'
