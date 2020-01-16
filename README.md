@@ -10,4 +10,5 @@
    b) sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 5) Type chsh -s /bin/zsh
 6) Copy all files from Linux-CLI-setup into your home directory.
-7) Exit the shell and reconnect.
+7) Delete .viminfo if present.
+8) Exit the shell and reconnect.
