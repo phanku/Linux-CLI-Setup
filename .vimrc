@@ -17,4 +17,5 @@ set shiftwidth=3
 set expandtab
 set fileencodings=utf-8
 :hi Comment ctermfg=yellow
+hi Directory ctermfg=yellow
 highlight! link DiffText MatchParen

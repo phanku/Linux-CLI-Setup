@@ -1,8 +1,6 @@
 alias hint="~/.hint/hint.sh"
 alias speedometer="speedometer -r eth0 -t eth0 -b"
 
-
-cd() { builtin cd "$@"; ls; }
 #  ---------------------------------------
 #  Better terminal commands
 #  ---------------------------------------

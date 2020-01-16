@@ -10,7 +10,9 @@ export ZSH="/home/phanku/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="bira"
-ZSH_THEME="jonathan"
+#ZSH_THEME="jonathan"
+#ZSH_THEME="gnzh"
+ZSH_THEME="bira"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -104,3 +106,11 @@ source $ZSH/oh-my-zsh.sh
 
 eval $( dircolors -b $HOME/.dircolors )
 
+# Alias definitions.
+# # You may want to put all your additions into a separate file like
+# # ~/.bash_aliases, instead of adding them here directly.
+# # See /usr/share/doc/bash-doc/examples in the bash-doc package.
+#
+if [ -f ~/.bash_aliases ]; then
+     . ~/.zsh_aliases
+fi
