@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/phanku/.byobu'
-let g:netrw_dirhist_2='/home/phanku'
-let g:netrw_dirhist_3='/home/phanku/Linux-CLI-Setup'
-let g:netrw_dirhist_4='/home/phanku'
-let g:netrw_dirhist_5='/home/phanku/Linux-CLI-Setup'
