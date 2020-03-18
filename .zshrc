@@ -3,7 +3,7 @@ export TERM=xterm-256color
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/phanku/.oh-my-zsh"
+export ZSH="/Users/phanku/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -104,7 +104,14 @@ source $ZSH/oh-my-zsh.sh
 
 # LS_COLORS=$LS_COLORS:'di=0,37' ; export LS_COLORS
 
-eval $( dircolors -b $HOME/.dircolors )
+if whence dircolors > /dev/null; then
+   eval $( dircolors -b $HOME/.dircolors )
+else
+   export CLICOLOR=1
+   export LSCOLORS=gafafadabaeaeacacagaga
+   export GREP_OPTIONS='--color=auto'
+fi
+
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
