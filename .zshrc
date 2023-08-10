@@ -9,9 +9,6 @@ export ZSH="/home/phanku/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="bira"
-#ZSH_THEME="jonathan"
-#ZSH_THEME="gnzh"
 ZSH_THEME="bira"
 
 # Set list of themes to pick from when loading at random
@@ -72,7 +69,7 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(aliases git gitignore git-prompt man sudo tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,7 +118,7 @@ if [ -f ~/.zsh_aliases ]; then
      . ~/.zsh_aliases
 fi
 
-# Sets up the enviornment. 
+# Sets up the environment.
 if [ -f ~/.zshenv ]; then
      . ~/.zshenv
 fi
