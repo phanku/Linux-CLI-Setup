@@ -21,20 +21,6 @@ set encoding=utf-8
 :hi Directory ctermfg=yellow
 highlight! link DiffText MatchParen
 
-" Plugins will be downloaded under the specified directory.
-call plug#begin('~/.vim/plugged')
-
-" Declare the list of plugins.
-Plug 'vim-airline/vim-airline'
-Plug 'tpope/vim-fugitive'
-"Plug 'syntastic-yaml-yamllint'
-
-" Plugins for `vim-airline`
-Plug 'jreybert/vimagit'
-
-" List ends here. Plugins become visible to Vim after this call.
-call plug#end()
-
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
